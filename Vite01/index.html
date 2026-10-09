@@ -1,13 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vite01</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-light">
+    <div class="container py-5">
+
+        <div class="p-5 mb-4 bg-primary text-white rounded-3">
+            <h1 class="display-5 fw-bold">Adatlap kezelő</h1>
+            <p class="fs-5 mb-0">
+                Személyes adatok megadása és kezelése.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header">
+                        <h5 class="mb-0">Adatok megadása</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="nev" class="form-label">Név</label>
+                            <input type="text" class="form-control"
+                                   id="nev" placeholder="Add meg a neved">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="osztaly" class="form-label">Osztály</label>
+                            <input type="text" class="form-control"
+                                   id="osztaly" placeholder="Pl. 10.A">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="szuletesiDatum" class="form-label">
+                                Születési dátum
+                            </label>
+                            <input type="date" class="form-control"
+                                   id="szuletesiDatum">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header">
+                        <h5 class="mb-0">Eredmények</h5>
+                    </div>
+                    <div class="card-body" id="eredmenyek">
+                        <!-- Későbbi JavaScript-tartalom -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #e9ecef;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
